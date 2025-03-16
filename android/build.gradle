@@ -21,7 +21,7 @@ android {
     compileSdkVersion 30
     namespace = "com.flutterbeacon"
     defaultConfig {
-        applicationId = "com.flutterbeacon"
+        //applicationId = "com.flutterbeacon"
         minSdkVersion 18
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
