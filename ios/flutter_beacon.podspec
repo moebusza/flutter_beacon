@@ -16,8 +16,11 @@ Flutter plugin for scanning beacon (iBeacon platform) devices on Android and iOS
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
   s.ios.framework = 'CoreLocation',
                     'CoreBluetooth'
+  s.static_framework = true
+  s.dependency 'Flutter'
+  s.platform = :ios, '11.0'
 end
 
