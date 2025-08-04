@@ -1,13 +1,14 @@
 plugins {
     id 'com.android.library'
+    id 'dev.flutter.flutter-plugin-loader'
 }
 
 android {
     namespace = "com.flutterbeacon"
-    compileSdkVersion 34
+    compileSdk = flutter.compileSdkVersion
 
     defaultConfig {
-        minSdkVersion 21
+        minSdk = 28
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -16,8 +17,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 }
 
